@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Plaker:Youtube Playlist Maker</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script type="text/javascript" src="Scripts/script.js"></script>
+
 </head>
-<body>
+<body class="container-fluid"> 
 
-	<header>
-		<h1>Plaker</h1>
-	</header>
-	<br>
+	<div class="text-center plakerHeading">
+		<h1> <big><big><big><big><big><big><big> Plaker </big></big></big></big></big></big></big></h1>
+	</div>
 
-	<input type="url" name="link1" placeholder="Paste Url, Make Playlist, Share">
+	<br><br>
 
-	<button type="button" onclick="addLinkInput();"> + </button>
+	<div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="input-group input-group-lg col-md-8">
+				<input type="url" id="inputField" name="inputUrl1" class="form-control" placeholder="Paste Url, Make Playlist, Share!">
 
-	<button type="button" onclick="go();"> DONE </button>
+				<div class="input-group-btn">
+					<div id="inputField">
+						<button type="button" class="btn btn-lg btn-info" onclick="createInputField();">
+							<span class="glyphicon glyphicon-plus"></span>
+						</button>	
+						
+					</div>
 
-	<footer></footer>
+					
+				</div>
+			</div>	
+
+			<div class="col-md-2"></div>
+		</div>
+
+		<br><br>
+
+		<div class="text-center">
+			<button type="button" class="btn btn-lg btn-success" onclick="createPlaylist();"> DONE </button>
+		</div>
+
+		<div id="hr1"></div>
+	</div>
 
 </body>
 </html>

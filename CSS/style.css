@@ -1,0 +1,15 @@
+body{
+	background-color: ;
+	font-family: 'Open Sans', 'sans-serif';
+}
+
+.plakerHeading{
+	margin: 8%;
+	margin-top: 4%;
+}
+
+#hr{
+	border-bottom: solid;
+	border-bottom-color: #5cb85c;
+	border-bottom-width: 4%;
+}
